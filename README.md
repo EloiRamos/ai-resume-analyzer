@@ -10,7 +10,7 @@ Built with **Next.js 14**, **TypeScript**, and **OpenAI GPT-4o-mini** — fully 
 ## ⚡ Quickstart
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/EloiRamos/ai-resume-analyzer.git
 cd ai-resume-analyzer
 npm install
 npm run dev
@@ -66,7 +66,7 @@ Then open [http://localhost:3000](http://localhost:3000) in your browser.
 ### Installation
 
 ```bash
-git clone <repository-url>
+git clone https://github.com/EloiRamos/ai-resume-analyzer.git
 cd ai-resume-analyzer
 npm install
 ```
