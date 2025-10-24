@@ -1,31 +1,40 @@
-# Project Context
+# 🧠 AI Resume Analyzer – Project Specification
 
-## Purpose
-[Describe your project's purpose and goals]
+## Overview
+AI Resume Analyzer is a **GenAI SaaS web application** built with **Next.js 14**, **TypeScript**, and **Vercel AI SDK**, designed to analyze resumes and generate actionable insights with **AI-driven scoring** (0–100).  
+
+The app enables users to upload resumes, extract structured data, evaluate career strengths, and receive improvement suggestions using **OpenAI GPT-4o-mini**.
+
+## Objectives
+- Analyze resumes (PDF/DOCX) using AI.  
+- Provide dynamic scoring across skills, experience, and formatting.  
+- Offer recommendations for ATS optimization and keyword strength.  
+- Deliver an interactive analytics dashboard for visualization.  
+- Enable user authentication for personalized analysis history.
 
 ## Tech Stack
-- [List your primary technologies]
-- [e.g., TypeScript, React, Node.js]
+- **Framework:** Next.js 14 (App Router)
+- **Language:** TypeScript
+- **AI Engine:** OpenAI GPT-4o-mini via Vercel AI SDK
+- **Storage:** Vercel Blob / S3
+- **Auth:** NextAuth.js
+- **UI:** Tailwind CSS + shadcn/ui
+- **Deployment:** Vercel
 
-## Project Conventions
+## Pages
+- `/` – Landing page (upload form)
+- `/dashboard` – User dashboard with resume history & analytics
+- `/upload` – Resume upload interface
+- `/api/upload` – Handles file uploads
+- `/api/analyze` – Runs AI resume analysis
 
-### Code Style
-[Describe your code style preferences, formatting rules, and naming conventions]
+## Key Integrations
+- GPT-4o-mini model via OpenAI API  
+- NextAuth.js for authentication  
+- File parsing (PDF/DOCX)  
+- Vercel AI SDK for streaming responses  
 
-### Architecture Patterns
-[Document your architectural decisions and patterns]
-
-### Testing Strategy
-[Explain your testing approach and requirements]
-
-### Git Workflow
-[Describe your branching strategy and commit conventions]
-
-## Domain Context
-[Add domain-specific knowledge that AI assistants need to understand]
-
-## Important Constraints
-[List any technical, business, or regulatory constraints]
-
-## External Dependencies
-[Document key external services, APIs, or systems]
+## Success Criteria
+- < 5s average response time per analysis  
+- 90%+ correct resume text extraction rate  
+- User can analyze at least 3 resumes per session  
